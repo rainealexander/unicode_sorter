@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Unicode Sorter</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+<div class="container">
+    <h1 class="title">Unicode Sorter</h1>
+    <div id="sorter-container">
+        <canvas id="myCanvas" width="367" height="500"></canvas>
+        <div id="btn-container">
+            <button id="refresh" onclick="refresh()">Refresh</button>
+            <p>- Flag Characters -</p>
+            <button id="bad" onclick="badCharacters()">Bad Chars</button>
+            <button id="emoji" onclick="emoji()">Emoji</button>
+            <button id="cool" onclick="cool()">Cool</button>
+            <button id="mehcat" onclick="mehCat()">...meh</button>
+            <p>----- Display -----</p>
+            <button id="only-emoji" onclick="onlyEmoji()">EmojiOnly</button>
+            <button id="interesting" onclick="interesting()">CoolChars</button>
+            <button id="mediocre" onclick="mediocre()">Mediocre</button>
+            <p>---- Save/Load ----</p>
+            <button id="save" onclick="save()">Save</button>
+            <button id="load" onclick="load()">Load</button>
+            <button id="clear-save" onclick="clearSave()">Clear Save</button>
+            <p>--- Categorize ---</p>
+            <select id="categorize" size="4" onchange="setCat()">
+                <option value="" disabled selected>select</option>
+                <option value="arrows">arrows</option>
+                <option value="latin">latin letter</option>
+                <option value="punctuation">punctuation</option>
+                <option value="star">stars</option>
+                <option value="runeish">runeish</option>
+                <option value="blocks">blocks</option>
+                <option value="planty">planty</option>
+                <option value="storage">storage</option>
+                <option value="shapes">shapes</option>
+                <option value="spooky">spooky</option>
+                <option value="symbols">symbols</option>
+                <option value="braille">braille</option>
+                <option value="omega">omega</option>
+                <option value="letterz">letter combo</option>
+                <option value="lines">lines</option>
+                <option value="numbers">numbers</option>
+                <option value="alchemy">alchemy</option>
+                <option value="window">window</option>
+                <option value="lighting">lighting</option>
+                <option value="doors">doors</option>
+                <option value="favs">favs</option>
+            </select>
+            <button id="catBtn" onclick="catize()">Categorize</button>
+            <button id="uncat" onclick="uncatz()">Uncategorized</button>
+            <button id="showCat" onclick="showCat()">Show Category</button>
+            <span id="catnum"></span>
+            <p>---- Utilities ----</p>
+            <button id="clear-selected" onclick="clearSelected()">Clear Selected</button>
+        </div>
+    </div>
+</div>
+</body>
+<script src="main.js"></script>
+</html>
