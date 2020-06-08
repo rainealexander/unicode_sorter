@@ -8,20 +8,22 @@
 </head>
 <body>
 <div class="container">
-    <h1 class="title">Unicode Sorter</h1>
+    <div class="title">
+        <h1>Unicode Sorter</h1>
+        <button id="refresh" onclick="refresh()">Refresh</button>
+    </div>
     <div id="sorter-container">
         <canvas id="myCanvas" width="367" height="500"></canvas>
         <div id="btn-container">
-            <button id="refresh" onclick="refresh()">Refresh</button>
             <p>- Flag Characters -</p>
             <button id="bad" onclick="badCharacters()">Bad Chars</button>
             <button id="emoji" onclick="emoji()">Emoji</button>
             <button id="cool" onclick="cool()">Cool</button>
-            <button id="mehcat" onclick="mehCat()">...meh</button>
+            <button id="mehcat" onclick="mehCat()">Overlap</button>
             <p>----- Display -----</p>
             <button id="only-emoji" onclick="onlyEmoji()">EmojiOnly</button>
             <button id="interesting" onclick="interesting()">CoolChars</button>
-            <button id="mediocre" onclick="mediocre()">Mediocre</button>
+            <button id="mediocre" onclick="mediocre()">Overlapping</button>
             <p>---- Save/Load ----</p>
             <button id="save" onclick="save()">Save</button>
             <button id="load" onclick="load()">Load</button>
