@@ -237,7 +237,7 @@ let getCharClicked = function(x, y) {
     ctx.globalAlpha = 1;
     ctx.fillStyle = 'black';
     console.log('r: ' + r + ' c: ' + c);
-    console.log('Code: ' + charArray[r][c] + ' ' + String.fromCharCode(charArray[r][c]));
+    console.log('Code: ' + charArray[r][c] + ' ' + String.fromCodePoint(charArray[r][c]));
     return charArray[r][c];
 };
 
@@ -402,7 +402,7 @@ let fillCanvas = function() {
         i = 0;
         for (let y = borderPad; y < cHeight - borderPad; y = y + charHeight) {
             //console.log('y:' + y);
-            ctx.fillText(String.fromCharCode(charArray[i][j]), x, y);
+            ctx.fillText(String.fromCodePoint(charArray[i][j]), x, y);
             i++;
         }
         j++;
