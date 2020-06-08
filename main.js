@@ -2,8 +2,8 @@ console.log('javacript loaded');
 const width = 11;
 const height = 15;
 
-const codePointStart = 32;
-const codePointMax = 140000;
+const codePointStart = 32; // start of visible characters
+const codePointMax = 131071; // end of supplementary multilingual plane
 
 //set up for drawing characters to canvas
 let charWidth = 31;
