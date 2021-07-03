@@ -21,6 +21,7 @@ body {
 }
 
 .container {
+    max-width: 60%;
     flex-direction: column;
     justify-content: flex-start;
     max-height: 100%;
@@ -53,7 +54,8 @@ body {
 }
 
 .canvas-container {
-    width: 100%;
+    max-width: 100%;
+    margin-right: auto;
 }
 
 canvas {
@@ -66,8 +68,8 @@ canvas {
 
 #btn-container {
     justify-content: space-between;
-    min-width: 15%;
-    max-width: 30%;
+    min-width: 18%;
+    max-width: 36%;
     flex-direction: column;
 }
 

@@ -1,6 +1,6 @@
 console.log('javacript loaded');
-const width = 11;
-const height = 15;
+const width = 14;
+const height = 18;
 
 const codePointStart = 32; // start of visible characters
 const codePointMax = 131071; // end of supplementary multilingual plane
