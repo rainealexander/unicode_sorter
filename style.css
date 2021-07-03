@@ -52,7 +52,12 @@ body {
     justify-content: flex-end;
 }
 
+.canvas-container {
+    width: 100%;
+}
+
 canvas {
+    align-self: flex-start;
     background: white;
     margin-right: 12px;
     border: 2px solid black;
